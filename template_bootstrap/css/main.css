@@ -296,3 +296,106 @@ section h2 {
     width: 50px;
     height: 20px;
 }
+
+.mc_wrap {
+    padding: 0;
+    text-align: center;
+    position: relative;
+}
+
+.mc_item {
+    border: 1px solid #353535;
+    border-radius: 2px;
+}
+
+.mc_item span {
+    display: block;
+    height: 85px;
+    width: 130px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px auto;
+}
+
+.mc_item h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "BebasRegular";
+    margin: 9px 0;
+}
+
+.mc_item_wrap .active,
+.mc_item_wrap:hover {
+    background-color: #2a2a2a;
+}
+
+.mc_item h4:hover,
+.mc_item_wrap .active {
+    text-decoration: underline;
+}
+
+.mc_item_wrap {
+    margin-left: 32px;
+    width: 160px;
+    display: inline-block;
+    text-align: center;
+}
+
+.mc_item_wrap:first-child {
+    margin: 0;
+}
+
+.mc_item_wrap a {
+    color: #fff;
+}
+
+.mc-toggle {
+    background-color: #212121;
+    height: 25px;
+    background-image: url(../img/mc_arr.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.mc_item_wrap .active .mc-toggle,
+.mc_item_wrap:hover .mc_item .mc-toggle {
+    background-color: #353535;
+    background-image: url(../img/mc_arr-active.png);
+}
+
+.mc_item_list {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    list-style: none;
+    padding: 15px 0;
+    font-size: 20px;
+    background-color: #353535;
+    margin-top: 25px;
+    z-index: 10;
+    display: none;
+}
+
+.mc_item_list li {
+    display: inline-block;
+    font-family: "BebasRegular";
+}
+
+.mc_item_list li a {
+    padding: 0 10px;
+    text-decoration: underline;
+}
+
+.mc_item_list li a:hover {
+    text-decoration: none;
+}
+
+.mc_item_wrap_af {
+    background-image: url(../img/mc_arr_af.png);
+    height: 9px;
+    margin: 16px 69px;
+    position: absolute;
+    width: 18px;
+    display: none;
+}
