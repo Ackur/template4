@@ -4,11 +4,16 @@ $(document).ready(function() {
         $(this).after("<div class='mc_item_wrap_af'></div>");
     });
     $(".mc-toggle").click(function() {
-        $(".mc_item_list, .mc_item_wrap_af").hide();
-        $(".mc_item").removeClass("active");
-        $(this).parent().addClass("active");
-        $(this).parent().parent().children(".mc_item_list").show();
-        $(this).parent().parent().children(".mc_item_wrap_af").show();
+        if ($(this).parent().parent().children("ul").is(":visible")) {
+            $(this).parent().parent().children(".mc_item_wrap_af").slideUp();
+            $(this).parent().parent().children("ul").slideUp();
+        } else {
+            $(".mc_item_list, .mc_item_wrap_af").hide();
+            $(".mc_item").removeClass("active");
+            $(this).parent().addClass("active");
+            $(this).parent().parent().children(".mc_item_list").slideDown();
+            $(this).parent().parent().children(".mc_item_wrap_af").slideDown();
+        }
     });
 
     //Цели для Яндекс.Метрики и Google Analytics

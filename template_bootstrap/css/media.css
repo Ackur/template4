@@ -1,54 +1,147 @@
-/*==========  Desktop First Method  ==========*/
-
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-
-}
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
-
-}
-
-
-/*==========  Mobile First Method  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
-
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-}
-
- /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
-}
+    /*==========  Desktop First Method  ==========*/
+    /* Large Devices, Wide Screens */
+    
+    @media only screen and (max-width: 1200px) {
+        .top_mnu a {
+            padding: 0 20px 0 35px;
+            background-position: 10px 15px;
+        }
+        .top_mnu li:nth-child(2) a {
+            background-position: 7px -53px;
+        }
+        .top_mnu li:nth-child(3) a {
+            background-position: 10px -120px;
+        }
+        .top_mnu li:nth-child(4) a {
+            background-position: 8px -189px;
+        }
+        .top_mnu li:nth-child(5) a {
+            background-position: 8px -255px;
+        }
+        .top_mnu li:nth-child(6) a {
+            background-position: 8px -333px;
+        }
+        .main_cats h2 {
+            margin: 20px 0;
+        }
+        .mc_wrap {
+            margin: 0;
+        }
+        .mc_item_wrap {
+            margin-left: 20px;
+        }
+        .mc_item_wrap:nth-child(6),
+        .mc_item_wrap:nth-child(5) {
+            margin-top: 20px;
+        }
+        .mc_button_wrap {
+            margin-top: 32px;
+        }
+        .s_bottom img {
+            display: none;
+        }
+        .s_bottom_img {
+            background-image: url(../img/garage.jpg);
+            background-position: center;
+            max-width: 100%;
+            height: 334px;
+        }
+        .s_bottom_p {
+            margin-top: 0;
+        }
+    }
+    /* Medium Devices, Desktops */
+    
+    @media only screen and (max-width: 992px) {
+        .waranty {
+            background-color: #242424;
+            position: absolute;
+            top: -88px;
+            right: 210px;
+        }
+    }
+    /* Small Devices, Tablets */
+    
+    @media only screen and (max-width: 768px) {
+        header {
+            min-height: 100vh;
+        }
+        header .top_addr {
+            display: none;
+        }
+        header h1 {
+            font-size: 34px;
+        }
+        /* .st_button {
+            margin-bottom: 10px;
+        } */
+        .top_mnu ul {
+            display: none;
+        }
+        .waranty {
+            position: unset;
+        }
+        .main_cats h2 {
+            font-size: 35px;
+        }
+        .main_cats h2::before,
+        .main_cats h2::after,
+        .art_header::before,
+        .art_header::after {
+            content: '';
+            display: none;
+        }
+        .mc_item_wrap {
+            margin-left: 0px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .art_header {
+            font-size: 35px;
+        }
+        .s_bottom h2 {
+            margin: 0 0 20px;
+            text-align: center;
+        }
+        .sb_but_wrap {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .s_bottom_p,
+        .s_bottom_p+p {
+            text-align: center;
+        }
+        footer {
+            padding: 20px 0;
+        }
+        .copyright {
+            padding-left: 0;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        .footer_counter {
+            padding-top: 20px;
+        }
+    }
+    /* Extra Small Devices, Phones */
+    
+    @media only screen and (max-width: 480px) {}
+    /* Custom, iPhone Retina */
+    
+    @media only screen and (max-width: 320px) {}
+    /*==========  Mobile First Method  ==========*/
+    /* Custom, iPhone Retina */
+    
+    @media only screen and (min-width: 320px) {}
+    /* Extra Small Devices, Phones */
+    
+    @media only screen and (min-width: 480px) {}
+    /* Small Devices, Tablets */
+    
+    @media only screen and (min-width: 768px) {}
+    /* Medium Devices, Desktops */
+    
+    @media only screen and (min-width: 992px) {}
+    /* Large Devices, Wide Screens */
+    
+    @media only screen and (min-width: 1200px) {}
