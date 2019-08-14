@@ -56,13 +56,13 @@
         .waranty {
             background-color: #242424;
             position: absolute;
-            top: -88px;
-            right: 210px;
+            top: -148px;
+            right: -350px;
         }
     }
     /* Small Devices, Tablets */
     
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 767px) {
         header {
             min-height: 100vh;
         }
@@ -75,11 +75,27 @@
         /* .st_button {
             margin-bottom: 10px;
         } */
+        .top_mnu .modile-menu_btn {
+            display: block;
+        }
         .top_mnu ul {
             display: none;
+            position: absolute;
+            left: 0;
+            width: 100vw;
+            top: 63px;
+        }
+        .top_mnu li {
+            float: none;
+            background-color: #242424;
+        }
+        .top_mnu li a {
+            border-left: none;
+            border-bottom: 1px solid #3b3b3b;
         }
         .waranty {
             position: unset;
+            margin: 9px auto 9px 0;
         }
         .main_cats h2 {
             font-size: 35px;

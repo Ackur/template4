@@ -16,6 +16,11 @@ $(document).ready(function() {
         }
     });
 
+    $('.modile-menu_btn').on('click', function() {
+        $(this).toggleClass('modile-menu_btn-active');
+    });
+
+
     //Цели для Яндекс.Метрики и Google Analytics
     $(".count_element").on("click", (function() {
         ga("send", "event", "goal", "goal");
