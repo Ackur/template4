@@ -46,6 +46,10 @@ body {
     position: relative;
 }
 
+.tac {
+    text-align: center;
+}
+
 header {
     background-image: url(../img/bg-header.jpg);
     min-height: 644px;
@@ -86,12 +90,37 @@ header h1 {
     border-bottom: transparent 1px dashed;
 }
 
+#top_addr_btn_w767+label {
+    background-image: url(../img/header_map_icon.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    min-width: 30px;
+    height: 50px;
+    display: block;
+}
+
+#top_addr_btn_w767,
+#top_addr_btn_w767+label {
+    display: none;
+}
+
+
+/* #top_addr_btn_w767:checked+label {
+    display: none;
+} */
+
+#top_addr_btn_w767:checked+label+.top_addr {
+    display: block;
+}
+
 .top_addr {
     padding-left: 50px;
     background-image: url(../img/header_map_icon.png);
     background-repeat: no-repeat;
     background-position: left top;
     line-height: 26px;
+    min-width: 30px;
+    height: 50px;
 }
 
 .top_addr strong {
@@ -103,15 +132,14 @@ header h1 {
 }
 
 .logo_wrap {
-    position: relative;
-    width: 240px;
-    margin: auto;
+    text-align: center;
 }
 
 .top_line .logo {
     position: absolute;
+    left: 0;
+    right: 0;
     border-bottom: medium none;
-    margin-top: -18px;
 }
 
 .ta_right {
@@ -122,6 +150,12 @@ header h1 {
 
 .ta_right span {
     color: #fff;
+}
+
+.ta_right_phone {
+    display: none;
+    font-size: 50px;
+    color: #f32b1c;
 }
 
 .button {

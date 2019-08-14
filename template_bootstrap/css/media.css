@@ -66,8 +66,30 @@
         header {
             min-height: 100vh;
         }
-        header .top_addr {
+        .top_addr {
             display: none;
+        }
+        #top_addr_btn_w767+label {
+            display: block;
+        }
+        .top_addr {
+            background-position: center top;
+            position: absolute;
+            background-image: none;
+            width: max-content;
+            z-index: 2;
+            background-color: #242424;
+            border: 3px solid #fff;
+            border-radius: 4px;
+            padding: 15px;
+            margin-top: 5px;
+            height: inherit;
+        }
+        .top_addr:focus-within strong {
+            display: block;
+        }
+        .ta_right_phone {
+            display: block;
         }
         header h1 {
             font-size: 34px;
