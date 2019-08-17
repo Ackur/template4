@@ -86,7 +86,7 @@ header h1 {
     transition: all .3s;
 }
 
-.top_line a:hover {
+.top_line a:not(.logo):hover {
     border-bottom: transparent 1px dashed;
 }
 
