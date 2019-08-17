@@ -309,7 +309,9 @@ header .button {
 }
 
 .top_mnu li:nth-child(3) a {
-    background-position: 20px -120px;
+    background-image: url(../img/ukraine_ukrainian_hryvnia_currency-128.png);
+    background-position: 19px 21px;
+    background-size: 19px;
 }
 
 .top_mnu li:nth-child(4) a {
